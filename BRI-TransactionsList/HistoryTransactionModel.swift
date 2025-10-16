@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct HistoryTransactionModel {
+struct HistoryTransactionModel: Identifiable {
+    let id = UUID()
     let paymentMethod, cardNumber, totalTransaction, dateTransaction, timeTransaction,statusTransaction: String
 }
